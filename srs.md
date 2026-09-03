@@ -642,3 +642,6 @@ erDiagram
 | PG06 | BR07 | FR23 - Quản lý tài khoản | UC07 - Quản lý hệ thống | AC19, AC20 |
 | PG06 | BR07 | FR24 - Tra cứu chuyến xe | UC07 - Quản lý hệ thống | AC20 |
 | PG06 | BR07 | FR25 - Báo cáo thống kê | UC08 - Xem báo cáo thống kê | AC21, AC22 |
+
+
+
