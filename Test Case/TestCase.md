@@ -1,31 +1,30 @@
-# CABSYSTEM – Test Case
+# TEST CASE – Hệ thống CABSYSTEM
 
-**Student:** Nguyen Huu Tien – 23706591
 
-## Test Cases
+## Danh sách Test Case
 
-| TC ID | Module | Test Scenario | Input | Expected Result |
-|------|--------|---------------|-------|-----------------|
-| TC001 | Login | Login with valid account | Valid email & password | User enters dashboard |
-| TC002 | Login | Login with wrong password | Valid email + wrong password | Error message appears |
-| TC003 | Register | Register new customer | Valid information | Account created successfully |
-| TC004 | Booking | Create a trip | Pickup & destination | Trip is created |
-| TC005 | Booking | Empty pickup location | Destination only | Validation error |
-| TC006 | Driver | Driver goes online | Status = Online | Driver becomes available |
-| TC007 | Driver | Auto assign driver | New trip | System assigns nearest driver |
-| TC008 | Trip | Start trip | Assigned trip | Status = In Progress |
-| TC009 | Trip | Complete trip | Finished trip | Status = Completed |
-| TC010 | Payment | Cash payment | Completed trip | Payment saved |
-| TC011 | Payment | E-wallet payment | Completed trip | Payment successful |
-| TC012 | Rating | Submit rating | 5 stars | Rating stored |
-| TC013 | Vehicle | Add vehicle | Valid vehicle data | Vehicle added |
-| TC014 | Report | View trip report | Date range | Report displayed |
-| TC015 | Logout | Logout system | Click Logout | Return to Login page |
+| Mã TC | Chức năng | Mục tiêu kiểm thử | Dữ liệu đầu vào | Kết quả mong đợi |
+|--------|-----------|-------------------|-----------------|------------------|
+| TC001 | Đăng nhập | Đăng nhập đúng tài khoản | Email + mật khẩu hợp lệ | Vào trang Dashboard |
+| TC002 | Đăng nhập | Sai mật khẩu | Email đúng + mật khẩu sai | Hiển thị thông báo lỗi |
+| TC003 | Đăng ký | Tạo tài khoản khách hàng | Thông tin hợp lệ | Đăng ký thành công |
+| TC004 | Đặt xe | Tạo chuyến đi mới | Điểm đón + điểm đến | Chuyến đi được tạo |
+| TC005 | Đặt xe | Thiếu điểm đón | Chỉ nhập điểm đến | Báo lỗi dữ liệu |
+| TC006 | Tài xế | Chuyển trạng thái Online | Trạng thái = Online | Tài xế sẵn sàng nhận chuyến |
+| TC007 | Tài xế | Phân công tài xế tự động | Có chuyến mới | Hệ thống gán tài xế gần nhất |
+| TC008 | Chuyến đi | Bắt đầu chuyến | Chuyến đã được nhận | Trạng thái = Đang thực hiện |
+| TC009 | Chuyến đi | Hoàn thành chuyến | Chuyến kết thúc | Trạng thái = Hoàn thành |
+| TC010 | Thanh toán | Thanh toán tiền mặt | Chuyến hoàn thành | Lưu thông tin thanh toán |
+| TC011 | Thanh toán | Thanh toán điện tử | Chuyến hoàn thành | Thanh toán thành công |
+| TC012 | Đánh giá | Khách hàng đánh giá | 5 sao + nội dung | Lưu đánh giá thành công |
+| TC013 | Phương tiện | Thêm xe mới | Thông tin xe hợp lệ | Xe được thêm vào hệ thống |
+| TC014 | Báo cáo | Xem báo cáo chuyến đi | Khoảng thời gian | Hiển thị danh sách báo cáo |
+| TC015 | Đăng xuất | Thoát khỏi hệ thống | Nhấn Đăng xuất | Quay về màn hình đăng nhập |
 
-## Acceptance Criteria
+## Tiêu chí đạt
 
-- All required fields are validated.
-- Only online drivers receive new trips.
-- Payment is available only after trip completion.
-- Only the customer can submit a rating.
-- Unauthorized users cannot access protected APIs.
+- Tất cả trường bắt buộc phải được kiểm tra.
+- Chỉ tài xế Online mới được nhận chuyến.
+- Chỉ thanh toán khi chuyến đi đã hoàn thành.
+- Chỉ khách hàng của chuyến đi mới được đánh giá.
+- Người chưa đăng nhập không được truy cập API được bảo vệ.
